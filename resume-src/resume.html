@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Frank Zhao Resume</title>
+<style>
+  @page { size: letter; margin: 0.45in 0.55in; }
+  body { margin: 0; font: 9.4pt/1.27 Calibri, Arial, sans-serif; color: #111; }
+  h1 { margin: 0; font-size: 19pt; text-align: center; }
+  .contact { text-align: center; margin: 1pt 0 0; }
+  h2 { margin: 6pt 0 2.5pt; font-size: 10.5pt; letter-spacing: 0.04em; border-bottom: 0.75pt solid #111; }
+  h3 { margin: 4.5pt 0 0; font-size: 9.6pt; }
+  p { margin: 0; }
+  ul { margin: 1pt 0 0; padding-left: 12pt; }
+  .row { display: flex; justify-content: space-between; gap: 12pt; }
+  .skills { display: grid; grid-template-columns: repeat(6, auto); gap: 0 10pt; justify-content: space-between; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<h1>Frank Zhao</h1>
+<p class="contact">College Station, TX || <a href="mailto:yuyangzhao037@gmail.com">yuyangzhao037@gmail.com</a> || <a href="https://frankzhao77.github.io/">frankzhao77.github.io</a></p>
+
+<h2>SUMMARY</h2>
+<p>Computer Science senior at Texas A&amp;M University graduating May 2027, with internship experience developing ERP workflows and projects in full-stack development and AI-powered applications. Strongest in Java, with hands-on experience in Python, Go, React, and Spring Boot. Seeking a <b>Summer 2027 Software Engineering Internship</b> or a <b>full-time role upon graduation</b>.</p>
+
+<h2>EDUCATION</h2>
+<div class="row"><b>Texas A&amp;M University</b><span>College Station, TX, US</span></div>
+<div class="row"><span>Bachelor of Science, Computer Science, GPA 3.7/4.0</span><span>May 2023 – May 2027 (expected)</span></div>
+
+<h2>TECHNICAL SKILLS</h2>
+<div class="skills">
+  <span>Java/Kotlin</span><span>Python/Go</span><span>JavaScript/TypeScript</span><span>C/C++</span><span>Ruby/C#</span><span>R/MATLAB</span>
+  <span>HTML/CSS</span><span>React/Redux</span><span>AngularJS/jQuery</span><span>Android/Swift</span><span>Java Servlet</span><span>Linux</span>
+  <span>Spring/Node.js</span><span>MySQL/PostgreSQL</span><span>AWS Lambda/EC2/RDS</span><span>Google GCE/GAE</span><span>OpenAI API</span><span>RAG/FAISS</span>
+  <span>YOLO/CLIP</span><span>Data Modeling</span><span>Feature Engineering</span><span>Recommendation Systems</span>
+</div>
+
+<h2>WORK EXPERIENCE</h2>
+<div class="row"><b>Full-Stack Software Engineer Intern</b><span>May 2026 – August 2026</span></div>
+<p>SpectraCell Laboratories, Inc.</p>
+<ul>
+  <li>Delivered five merged full-stack enhancements to streamline procurement, strengthen data integrity, and improve usability.</li>
+  <li>Customized cloud ERP with forms, validations, reports, workflows, and integrations for procurement, inventory, and lab operations.</li>
+  <li>Developed with <b>Python, JavaScript, Frappe/ERPNext, MariaDB, and Docker</b>, using Kanban, Git branches, testing, and code reviews.</li>
+  <li>Added notes, creator tracking, warehouse defaults, and required UOM selection to Material Requests, cutting creation time by <b>30%</b>.</li>
+  <li>Built a price-change approval workflow linking purchase orders, invoices, and receipts to centralize history and improve auditability.</li>
+</ul>
+
+<h2>PROJECT EXPERIENCES</h2>
+<h3>Agent AI: Full-Stack RAG &amp; MCP-Based Document Q&amp;A Agent</h3>
+<ul>
+  <li>Engineered a full-stack conversational AI system using <b>React + Ant Design</b>, integrating <b>voice I/O modules (react-speech-recognition, speak-tts)</b> to enable seamless bidirectional spoken interaction, reducing user query time by <b>40%</b>.</li>
+  <li>Implemented a <b>Retrieval-Augmented Generation (RAG)</b> pipeline with <b>LangChain and GPT-5</b>, achieving <b>92%</b> semantic retrieval accuracy and generating context-aware responses across multi-document datasets.</li>
+  <li>Designed a hybrid retrieval strategy that combined local <b>vector search (FAISS)</b> with web-augmented retrieval via <b>Model Context Protocol (MCP)</b> integrating SerpAPI for dynamic real-time knowledge injection.</li>
+  <li>Built and deployed a <b>Node.js + Express backend</b> to handle document ingestion, query orchestration, and <b>RAG inference</b>, supporting 200+ concurrent queries with sub-second latency under production load testing.</li>
+</ul>
+
+<h3>Favify: A Kotlin-Based Spotify Favorites App with Optimized Performance and Enhanced Interaction</h3>
+<ul>
+  <li>Designed a <b>Kotlin-based</b> Spotify favorite app utilizing <b>Android Jetpack Library</b> and <b>Hilt Dependency Injection</b>, which streamlined app performance and maintenance.</li>
+  <li>Implemented BottomBar &amp; App Navigation using <b>Jetpack Navigation</b> component, improving user navigation efficiency.</li>
+  <li>Created a mock <b>RESTful API</b> using <b>json-server</b> and utilized <b>Retrofit</b> to manage API requests.</li>
+  <li>Built the feed/album/favorite UI in <b>Jetpack Compose</b> following <b>MVVM</b> architecture, enhancing UI responsiveness and user interaction.</li>
+  <li>Enabled local cache ability for favorite features using <b>Room Database</b>.</li>
+  <li>Integrated <b>Google ExoPlayer</b> for global music playback, improving playback stability and user satisfaction.</li>
+  <li>Deployed backend services in <b>Docker</b> containers and orchestrated them using <b>Kubernetes</b>, ensuring efficient scaling and high availability.</li>
+</ul>
+
+<h3>PermitAI: AI-Assisted Municipal Permit Intake and Review Portal</h3>
+<ul>
+  <li>Developed a full-stack municipal permit portal using <b>React 19, TypeScript, Node.js, Express, and PostgreSQL</b>, supporting resident applications, document intake, staff review, permit issuance, and status tracking.</li>
+  <li>Integrated the <b>OpenAI Responses API</b> with a predefined schema to extract <b>23 structured fields</b> from uploaded permit documents and calculate document completeness scores.</li>
+  <li>Implemented <b>deterministic TypeScript validation</b> to compare <b>13 extracted fields</b> against application, resident, and property records using address normalization, name matching, date normalization, and description similarity rules.</li>
+  <li>Automated application routing by recording missing fields and conflicts, denying conflicting submissions, and sending valid or extraction-failed applications to a staff review queue.</li>
+  <li>Built persistent audit records and queued email notifications with retry handling using <b>PostgreSQL and Nodemailer</b>; containerized the frontend, backend, and database with <b>Docker Compose</b> and validated functionality using <b>Vitest, React Testing Library, ESLint, and TypeScript checks</b>.</li>
+</ul>
+</body>
+</html>
